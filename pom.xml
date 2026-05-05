@@ -49,13 +49,6 @@
             <snapshots><enabled>true</enabled></snapshots>
         </repository>
     </repositories>
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub TobseF Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/TobseF/HelloMaven</url>
 
-        </repository>
-    </distributionManagement>
 
 </project>
