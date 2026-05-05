@@ -7,6 +7,14 @@
     <groupId>github.tobsef</groupId>
     <artifactId>hello-maven</artifactId>
     <version>1.2.3</version>
+    <dependencies>
+        <dependency>
+            <groupId>github.tobsef</groupId>
+            <artifactId>hello-maven</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+    </dependencies>
+
 
     <build>
         <plugins>
@@ -32,11 +40,21 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub TobseF Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/TobseF/HelloMaven</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+    </repositories>
     <distributionManagement>
         <repository>
             <id>github</id>
             <name>GitHub TobseF Apache Maven Packages</name>
             <url>https://maven.pkg.github.com/TobseF/HelloMaven</url>
+
         </repository>
     </distributionManagement>
 
